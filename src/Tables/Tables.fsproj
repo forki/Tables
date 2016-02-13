@@ -51,6 +51,7 @@
     <Compile Include="Types.fs" />
     <Compile Include="Cell.fs" />
     <Compile Include="Column.fs" />
+    <Compile Include="Table.fs" />
     <Compile Include="Layout.fs" />
   </ItemGroup>
   <PropertyGroup>
