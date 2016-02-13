@@ -1,4 +1,4 @@
 group Test
 NUnit
-NUnit.Runners
+NUnit.Runners.Net4
 FsUnit

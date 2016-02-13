@@ -8,6 +8,7 @@ open NUnit
 open NUnit.Framework
 open FsUnit
 
+(*
 let data = [1.1; 2.3; 4.5]
 let cols :Column<float, string> list =
     [
@@ -35,3 +36,4 @@ let ``simple specification works`` () =
 [<Test>]
 let ``empty column works`` () =
     vals.[1,1] |> should equal ""
+*)
