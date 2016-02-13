@@ -36,3 +36,6 @@ module Layout =
         blitTo top out 0 0
         blitTo bottom out (Array2D.length1 top) 0
         out
+
+    //let Array2D (tabs: Table<'style>[,]) = 
+        
