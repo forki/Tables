@@ -40,7 +40,6 @@ module Layout =
     let Array2D (tabs: Table<'style>[,]) =
         let rowNums = [|0..((Array2D.length1 tabs)-1)|]
         let rows = Array.map (fun n -> tabs.[n, 0..]) rowNums
-        let rowLayout row = Array.fold (fun state t -> Horizontal state t) Table.Empty row
-        Array.fold (fun state t -> Vertical state (rowLayout t)) Table.Empty rows
-            
-        
+        rows
+        |> Array.map (Array.reduce Horizontal)
+        |> Array.reduce Vertical
